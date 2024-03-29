@@ -18,7 +18,7 @@
 // If the name is not empty, we display a greeting message that includes the user's name.
 // If the name is empty, we prompt the user to enter their name.
 // We add a click event listener to the "Greet" button, which triggers the greetUser() function when clicked.
-// This solution creates a simple interactive webpage that greets the user based on their input.
+// This solution creates a  simple interactive webpage that greets the user based on their input.
 
 document.addEventListener('DOMContentLoaded', function(){
     function geetUser(){
