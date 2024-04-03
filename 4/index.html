@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h2>calculator</h2>
+      <div class="calculator">
+        <div class="expression">
+          <table border="" style="text-align: center">
+            <tr>
+              <td>
+                <label for="inputFirst">input 1</label>
+                <div class="inputFirst"><p>0</p></div>
+              </td>
+              <td rowspan="2">
+                <div class="operator">NONE</div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="inputSecond">input 2</label>
+                <div class="inputSecond"><p>0</p></div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <div class="result"><h2>Result :</h2></div>
+              </td>
+            </tr>
+          </table>
+          <div class="number">
+            <table>
+              <tr>
+                <td>
+                  <button id="operations" class="calbtn">+</button>
+                </td>
+                <td>
+                  <button id="operations" class="calbtn">-</button>
+                </td>
+                <td colspan="3">
+                  <button
+                    id="operations"
+                    class="calbtn"
+                    style="
+                      padding-left: 48px;
+                      padding-right: 48px;
+                      text-align: center;
+                    "
+                  >
+                    CE
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="numbtn" class="calbtn">9</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn">8</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn">7</button>
+                </td>
+                <td>
+                  <button id="operations" class="calbtn">/</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="numbtn" class="calbtn">6</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn">5</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn">4</button>
+                </td>
+                <td>
+                  <button id="operations" class="calbtn">*</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="numbtn" class="calbtn">3</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn">2</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn">1</button>
+                </td>
+                <td rowspan="4">
+                  <button
+                    id="operations"
+                    class="calbtn"
+                    style="
+                      padding-top: 48px;
+                      padding-bottom: 48px;
+                      text-align: center;
+                    "
+                  >
+                    =
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button id="numbtn" class="calbtn dot">-</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn dot">0</button>
+                </td>
+                <td>
+                  <button id="numbtn" class="calbtn dot">.</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
