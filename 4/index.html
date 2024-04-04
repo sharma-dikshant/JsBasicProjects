@@ -4,127 +4,151 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calculator</title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <h2>calculator</h2>
+    <div class="container">
       <div class="calculator">
-        <div class="expression">
-          <table border="" style="text-align: center">
-            <tr>
-              <td>
-                <label for="inputFirst">input 1</label>
-                <div class="inputFirst"><p>0</p></div>
-              </td>
-              <td rowspan="2">
-                <div class="operator">NONE</div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="inputSecond">input 2</label>
-                <div class="inputSecond"><p>0</p></div>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <div class="result"><h2>Result :</h2></div>
-              </td>
-            </tr>
-          </table>
-          <div class="number">
-            <table>
+        <form>
+          <div>
+            <input type=" text" name="display" readonly/>
+          </div>
+          <div>
+            <table border="">
               <tr>
                 <td>
-                  <button id="operations" class="calbtn">+</button>
+                  <input
+                    type="button"
+                    value="AC"
+                    onclick="display.value = '' "
+                  />
                 </td>
                 <td>
-                  <button id="operations" class="calbtn">-</button>
+                  <input
+                    type="button"
+                    value="DE"
+                    onclick="display.value = display.value.toString().slice(0,-1) "
+                  />
+                </td>
+                <td>
+                  <input type="button" value="." />
+                </td>
+                <td>
+                  <input type="button" value="/" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="9"
+                    onclick="display.value += '9' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="8"
+                    onclick="display.value += '8' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="7"
+                    onclick="display.value += '7' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="+"
+                    onclick="display.value += '+' "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="6"
+                    onclick="display.value += '6' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="5"
+                    onclick="display.value += '5' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="4"
+                    onclick="display.value += '4' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="-"
+                    onclick="display.value += '-' "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="3"
+                    onclick="display.value += '3' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="2"
+                    onclick="display.value += '2' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="1"
+                    onclick="display.value += '1' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="*"
+                    onclick="display.value += '*' "
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="button"
+                    value="00"
+                    onclick="display.value += '00' "
+                  />
+                </td>
+                <td>
+                  <input
+                    type="button"
+                    value="0"
+                    onclick="display.value += '0' "
+                  />
                 </td>
                 <td colspan="3">
-                  <button
-                    id="operations"
-                    class="calbtn"
-                    style="
-                      padding-left: 48px;
-                      padding-right: 48px;
-                      text-align: center;
-                    "
-                  >
-                    CE
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button id="numbtn" class="calbtn">9</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn">8</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn">7</button>
-                </td>
-                <td>
-                  <button id="operations" class="calbtn">/</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button id="numbtn" class="calbtn">6</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn">5</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn">4</button>
-                </td>
-                <td>
-                  <button id="operations" class="calbtn">*</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button id="numbtn" class="calbtn">3</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn">2</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn">1</button>
-                </td>
-                <td rowspan="4">
-                  <button
-                    id="operations"
-                    class="calbtn"
-                    style="
-                      padding-top: 48px;
-                      padding-bottom: 48px;
-                      text-align: center;
-                    "
-                  >
-                    =
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button id="numbtn" class="calbtn dot">-</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn dot">0</button>
-                </td>
-                <td>
-                  <button id="numbtn" class="calbtn dot">.</button>
+                  <input type="button" value="=" onclick="display.value = eval(display.value) "/>
                 </td>
               </tr>
             </table>
           </div>
-        </div>
+        </form>
       </div>
     </div>
-
-    <script src="app.js"></script>
   </body>
 </html>
