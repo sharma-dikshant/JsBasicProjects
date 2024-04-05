@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    /* Add your CSS styles here */
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display" readonly>
+    <div id="buttons">
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="add()">+</button>
+      <button onclick="subtract()">-</button>
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="multiply()">*</button>
+      <button onclick="divide()">/</button>
+      <button onclick="clearEntry()">CE</button>
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="memoryStore()">MS</button>
+      <button onclick="memoryRecall()">MR</button>
+      <button onclick="memoryClear()">MC</button>
+      <button onclick="squareRoot()">√</button>
+    </div>
+  </div>
+
+  <script>
+    let memory = 0;
+    let currentValue = '';
+    let operator = '';
+
+    function appendNumber(number) {
+      currentValue += number;
+      updateDisplay(currentValue);
+    }
+
+    function add() {
+      operator = '+';
+      memory = parseFloat(currentValue);
+      currentValue = '';
+    }
+
+    function subtract() {
+      operator = '-';
+      memory = parseFloat(currentValue);
+      currentValue = '';
+    }
+
+    function multiply() {
+      operator = '*';
+      memory = parseFloat(currentValue);
+      currentValue = '';
+    }
+
+    function divide() {
+      operator = '/';
+      memory = parseFloat(currentValue);
+      currentValue = '';
+    }
+
+    function clearDisplay() {
+      currentValue = '';
+      updateDisplay('');
+    }
+
+    function clearEntry() {
+      currentValue = '';
+      updateDisplay('');
+    }
+
+    function calculate() {
+      let result;
+      switch (operator) {
+        case '+':
+          result = memory + parseFloat(currentValue);
+          break;
+        case '-':
+          result = memory - parseFloat(currentValue);
+          break;
+        case '*':
+          result = memory * parseFloat(currentValue);
+          break;
+        case '/':
+          result = memory / parseFloat(currentValue);
+          break;
+      }
+      updateDisplay(result);
+      currentValue = '';
+      memory = result;
+    }
+
+    function memoryStore() {
+      memory = parseFloat(currentValue);
+      currentValue = '';
+    }
+
+    function memoryRecall() {
+      currentValue = memory.toString();
+      updateDisplay(currentValue);
+    }
+
+    function memoryClear() {
+      memory = 0;
+    }
+
+    function squareRoot() {
+      let result = Math.sqrt(parseFloat(currentValue));
+      updateDisplay(result);
+      currentValue = '';
+    }
+
+    function updateDisplay(value) {
+      document.getElementById('display').value = value;
+    }
+  </script>
+</body>
+</html>
