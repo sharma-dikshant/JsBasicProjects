@@ -9,12 +9,14 @@ img {
 
 .container {
     text-align: center;
-    /* background-color: beige; */
+    background-color: beige;
 
-    max-width: 50%;
-    padding: 2rem;
+    /* max-width: 50%; */
+    /* padding: 2rem; */
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 720px;
 }
 
 .card {
