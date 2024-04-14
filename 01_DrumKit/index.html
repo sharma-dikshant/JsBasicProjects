@@ -8,15 +8,33 @@
   </head>
   <body>
     <div class="container">
-      <div class="key" data-key="65"><span>A</span><span class="sound">Boom</span></div>
-      <div class="key" data-key="83"><span>S</span><span class="sound">Clap</span></div>
-      <div class="key" data-key="68"><span>D</span><span class="sound">Hihat</span></div>
-      <div class="key" data-key="70"><span>F</span><span class="sound">Kick</span></div>
-      <div class="key" data-key="71"><span>G</span><span class="sound">openhat</span></div>
-      <div class="key" data-key="72"><span>H</span><span class="sound">Ride</span></div>
-      <div class="key" data-key="74"><span>J</span><span class="sound">snare</span></div>
-      <div class="key" data-key="75"><span>K</span><span class="sound">Tink</span></div>
-      <div class="key" data-key="76"><span>L</span><span class="sound">Tom</span></div>
+      <div class="key" data-key="65">
+        <span>A</span><span class="sound">Boom</span>
+      </div>
+      <div class="key" data-key="83">
+        <span>S</span><span class="sound">Clap</span>
+      </div>
+      <div class="key" data-key="68">
+        <span>D</span><span class="sound">Hihat</span>
+      </div>
+      <div class="key" data-key="70">
+        <span>F</span><span class="sound">Kick</span>
+      </div>
+      <div class="key" data-key="71">
+        <span>G</span><span class="sound">openhat</span>
+      </div>
+      <div class="key" data-key="72">
+        <span>H</span><span class="sound">Ride</span>
+      </div>
+      <div class="key" data-key="74">
+        <span>J</span><span class="sound">snare</span>
+      </div>
+      <div class="key" data-key="75">
+        <span>K</span><span class="sound">Tink</span>
+      </div>
+      <div class="key" data-key="76">
+        <span>L</span><span class="sound">Tom</span>
+      </div>
     </div>
 
     <audio data-key="65" src="sounds/boom.wav"></audio>
@@ -32,16 +50,14 @@
     <script>
       function endTransition(e) {
         if (e.propertyName !== "transform") return; // to target longest transition
-        // console.log(e);
-        // console.log(this);
+
         this.classList.remove("playing");
       }
       function playSound(e) {
-        // console.log(e.keyCode);
         // selecting key
         const key = document.querySelector(`div[data-key = "${e.keyCode}"]`);
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-        // console.log(audio);
+
         if (!audio) return;
         key.classList.add("playing");
         audio.currentTime = 0;
@@ -53,7 +69,6 @@
       // writing a function to remove the transition after transition ends
 
       const keys = document.querySelectorAll(".key");
-      //   console.log(keys); //to check whether this array or not
 
       keys.forEach((key) =>
         key.addEventListener("transitionend", endTransition)
