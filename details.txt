@@ -1,0 +1,33 @@
+Basic JavaScript Introduction:
+
+This problem focuses on creating a simple interactive webpage that greets the user based on their input. It introduces basic JavaScript syntax, such as variables, functions, and event handling.
+Objects in JavaScript:
+
+In this problem, you'll create a virtual store application where JavaScript objects are used to represent products and their properties. This helps reinforce understanding of object-oriented programming concepts in JavaScript.
+Factory Function to Create Objects:
+
+The goal here is to develop a contact list application. Factory functions will be used to create contact objects, allowing users to add, edit, and delete contacts. This reinforces the concept of factory functions and object creation in JavaScript.
+Strings:
+
+Building a text manipulation tool is the focus here. Users will be able to perform various operations on strings, such as reversing, capitalizing, or counting characters. This helps strengthen skills in string manipulation using JavaScript.
+Arrays:
+
+This problem involves creating a task management application. Tasks will be stored in arrays, and users can add, remove, and update tasks. It reinforces the use of arrays for managing collections of data in JavaScript.
+Functions:
+
+The task is to design a calculator application with advanced functionality. Different mathematical operations will be implemented using functions, demonstrating the power and versatility of functions in JavaScript.
+Immediately Invoked Function Expression (IIFE):
+
+Here, you'll develop a currency converter tool. IIFE will be used to encapsulate conversion logic and prevent global scope pollution. This problem emphasizes the importance of modular and encapsulated code.
+JavaScript DOM Manipulation:
+
+Constructing a dynamic todo list application is the objective. You'll apply DOM manipulation techniques to select elements, update content, add new elements, and handle events. This problem enhances proficiency in interacting with the Document Object Model (DOM) using JavaScript.
+Event Loops:
+
+Creating a simple game like "Rock, Paper, Scissors" is the task here. Event loops will be used for game logic and user interaction, providing hands-on experience with asynchronous programming and event-driven development.
+Promises:
+
+The challenge is to build a weather forecast application that retrieves data from an external API. Promises will be used for asynchronous operations, ensuring smooth handling of data fetching and processing.
+API Integration:
+
+Developing a news aggregator application is the goal. It will fetch news articles from a news API and dynamically display them on the webpage. This problem emphasizes integrating external APIs into JavaScript applications for real-time data retrieval and display.

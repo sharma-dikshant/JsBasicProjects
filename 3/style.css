@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #42e36d95; */
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* background-color: antiquewhite; */
+}
+
+.main .heading{
+    background:antiquewhite;
+    padding: 2rem;
+    min-width: 100%;
+    text-align: center;
+}
+
+#contactTable{
+    /* border: 2px solid black; */
+    border-collapse: collapse;
+}
+
+#contactTable td{
+    padding: 0.3em;
+    text-align: center;
+}
+
+#contactTable .col{
+    background-color: #13dfdf92;
+}
+#contactTable .row{
+    background-color: #b3e1ef92;
+}

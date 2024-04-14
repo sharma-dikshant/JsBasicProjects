@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.store{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    background-color: bisque;
+}
+
+.ProductList{
+    background-color: #30baaa;
+    min-width: 4rem;
+}

@@ -1,0 +1,33 @@
+Basic JavaScript Introduction
+
+1. Project/Problem: Create a simple interactive webpage that displays a greeting message based on user input.
+Objects in JavaScript
+
+2. Project/Problem: Implement a virtual store application using JavaScript objects to represent products and their properties.
+Factory Function to Create Objects
+
+3. Project/Problem: Develop a contact list application where users can add, edit, and delete contacts using factory functions for object creation.
+Strings
+
+4. Project/Problem: Build a text manipulation tool that allows users to perform various operations on strings, such as reverse, capitalize, or count characters.
+Arrays
+
+5. Project/Problem: Create a task management application where users can add, remove, and update tasks using arrays to store task data.
+Functions
+
+6. Project/Problem: Design a calculator application with advanced functionality, utilizing functions for each mathematical operation.
+Immediately Invoked Function Expression (IIFE)
+
+7. Project/Problem: Develop a currency converter tool using IIFE to encapsulate conversion logic and prevent global scope pollution.
+JavaScript DOM Manipulation
+
+8. Project/Problem: Construct a dynamic todo list application that demonstrates DOM manipulation techniques, including element selection, content updating, adding new elements, and event handling.
+Event Loops
+
+9. Project/Problem: Create a simple game like "Rock, Paper, Scissors" that utilizes event loops for game logic and user interaction.
+Promises
+
+10. Project/Problem: Build a weather forecast application that retrieves data from an external API using promises for asynchronous operations.
+API Integration
+
+11. Project/Problem: Develop a news aggregator application that fetches news articles from a news API and displays them dynamically on the webpage.

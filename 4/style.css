@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+h2{
+    background-color: #EFBC9B;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: #FBF3D5;
+    padding: 2rem;
+    /* margin: 1rem; */
+    max-width: 30rem;
+}
+
+.expression{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.expression table td{
+    padding: 0.2rem;
+    max-width: 45px;
+    max-height: 45px;
+}
+
+.number{
+    /* padding: 3rem; */
+    max-width: 15rem;
+}
+
+.calbtn{
+    padding: 10px;
+    align-items: center;
+    max-width: 45px;
+    max-height: 45px;
+    /* margin-top: 0.5rem; */
+    /* margin-right: 0.5rem; */
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 1.5em;
+    /* border-radius: 50px; */
+}
+
+.dot{
+    /* font-size: 1.9em; */
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
