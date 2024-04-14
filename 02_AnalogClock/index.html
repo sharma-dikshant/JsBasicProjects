@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analog-Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock">
+      <div class="clockBack"></div>
+      <div class="min-hand hand">minute</div>
+      <div class="second-hand hand">Second</div>
+      <div class="hour-hand hand">hour</div>
+    </div>
+
+    <script>
+      function updateTime() {
+        const realTime = new Date();
+        const secondsDegrees = 6*(realTime.getSeconds()) + 90;
+        const minuteDegrees = 6*(realTime.getMinutes()) + 90;
+        const hourDegrees = 30 * (realTime.getHours()) + 90;
+
+        let secondhand = document.querySelector('.second-hand');
+        let minutehand = document.querySelector('.min-hand');
+        let hourhand = document.querySelector('.hour-hand');
+
+        secondhand.style.transform = `rotate(${secondsDegrees}deg)`;
+        minutehand.style.transform = `rotate(${minuteDegrees}deg)`;
+        hourhand.style.transform = `rotate(${hourDegrees}deg)`;
+
+        console.log("seconds =", realTime.getSeconds());
+        console.log('min = ',minuteDegrees);
+        console.log('hour = ',hourDegrees);
+
+      }
+
+      setInterval(updateTime, 1000);
+    </script>
+  </body>
+</html>
