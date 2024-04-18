@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+/* making roots */
+
+:root{
+    --base: yellow;
+    --blur: 10px;
+}
+
+.controls{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid var(--base);
+}
+
+.controls div{
+    padding: 10px;
+    
+
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+#Sample-image{
+    margin: 50px;
+    /* padding: 10px; */
+    box-shadow:-10px 20px 400px 10px var(--base);
+    max-width: 100%;
+    filter: blur(var(--blur));
+    /* background-color:var(--base); */
+}

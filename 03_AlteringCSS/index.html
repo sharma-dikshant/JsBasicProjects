@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Altering CSS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <div>
+          <label for="blur">Blur:</label>
+          <input
+            type="range"
+            id="blur"
+            min="0"
+            max="25"
+            value="10"
+            name="blur"
+          />
+        </div>
+        <div>
+          <label for="base">Base Color :</label>
+          <input type="color" id="base" value="#ffc600" name="base" />
+        </div>
+      </div>
+      <div class="image">
+        <img src="image/pexels-isabella-mendes-341013.jpg" id="Sample-image" />
+      </div>
+    </div>
+
+    <script>
+      //selecting all the inputs
+      const inputs = document.querySelectorAll(".controls input");
+
+      // update functions
+
+      function UpdateValues() {
+        // console.log(this.name);
+        // console.log(this.value);
+        // root in css in an document element
+        // for blur there should be suffix px to update value
+        if (this.name == "base")
+          document.documentElement.style.setProperty(
+            `--${this.name}`,
+            this.value
+          );
+        if (this.name == "blur")
+          document.documentElement.style.setProperty(
+            `--${this.name}`,
+            this.value + "px"
+          );
+
+        // or this can be done using data- attribute in input field data-suffix = 'px' and for color data-suffix = ''
+        // now access suffix = this.data-suffix and concating this to value
+        //data- is used because name is an in built attribute for the tag but to built custom attribute we can use data- attribute
+      }
+
+      // listening the changing events on the controls
+      // controls can be change using either scroll on control or by using mouse click
+
+      inputs.forEach((input) => input.addEventListener("change", UpdateValues));
+      inputs.forEach((input) =>
+        input.addEventListener("mousemove", UpdateValues)
+      );
+    </script>
+  </body>
+</html>
