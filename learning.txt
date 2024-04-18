@@ -1,0 +1,21 @@
+Sure, here's the corrected version of your explanations:
+
+1.1: `data-` - This is an attribute used to create user-defined attributes for an HTML tag. These can be accessed in JavaScript to retrieve specific values related to the tag.
+
+1.2: Key code - Represents the physical keys on the keyboard when pressed.
+
+1.3: `window.addEventListener` - This method is used to listen for events on the entire window.
+
+1.4.1: `querySelectorAll` returns a NodeList, which is different from an array and has limited methods. You can explore these methods in the console under the prototype.
+
+1.4.2: To convert a NodeList to an array, use `Array.from(document.querySelectorAll(...))`.
+
+1.5: To select a `div` with a specific `data-key`, use `document.querySelector('div[data-key="value"]')`.
+
+1.6: Every event listener passes an event to the targeted element's callback function.
+
+2.1: The `Date` object provides details like the date, time, day, month, and year.
+
+3.1: The `change` event is used to capture changes in values, such as sliders or color pickers, and even inputs.
+
+3.2: `:root { --base: yellow; }` is used to define global CSS variables that can be reused throughout the CSS file using `var(--base)`.
